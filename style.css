@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #FFFFFA;
+}
+header{
+    width: 100%;
+}
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 1rem auto;
+    background: #024959;
+}
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+.menu-bar{
+    display: none;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    color: white;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    font-family: monospace;
+}
+header nav ul li span {
+    margin-right: 1rem;
+}
+header nav ul li a:hover{
+    background: #037e8c;
+    color: white;
+}
+section{
+    padding: 2rem;
+}
+@media screen and (max-width:850px) {
+    header nav{
+        max-width: 40%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+        
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    header nav ul li{
+        border-bottom: 1px solid white;
+    }
+    .menu-bar{
+        display: block;
+        width: 100%;
+        background: #024959;
+    }
+    .menu-bar .btn-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        background: #024959;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .menu-bar i{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:470px) {
+    header nav{
+        max-width: 50%;
+    }
+    header nav ul {
+        font-size: .8rem;
+        
+    }
+}
+@media screen and (max-width:340px) {
+    header nav{
+        max-width: 50%;
+    }
+    header nav ul {
+        font-size: .65rem;
+        padding: .3rem;
+    }
+}
